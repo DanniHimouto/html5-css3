@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+body {
+    font-size: 20px;
+}
+
+#banner {
+    width: 100%;
+    border: 3px solid black;
+}
+
+.title-prin {
+    padding-left: 20px;
+}
+
+.segundo {
+    background: #cccccc;
+    border: 3px solid black;
+    width: 100%;
+}
+
+.title-center {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+em strong {
+    color: red;
+}
+
+.bene {
+    background-color: grey;
+    border: 3px solid black;
+    width: 100%;
+}
+
+h3 {
+    background-color: rgb(29, 13, 13);
+    color: #ffffff;
+    margin-top: -1px;
+    margin-right: -1px;
+    margin-bottom: 0px;
+    margin-left: -1px;
+    padding: 2%;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    list-style-position: inside;
+    text-align: left;
+}
+
+.itens {
+    font-style: italic;  
+}
+
+#beneficio {
+    width: 50%;
+    padding: 10px;
+}

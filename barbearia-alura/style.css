@@ -1,64 +1,117 @@
 @charset "UTF-8";
 
-body {
-    font-size: 20px;
+header {
+    background-color: #bbbbbb;
+    padding: 20px 0;
+    border-bottom: 5px solid #1d0d0d;
 }
 
-#banner {
-    width: 100%;
-    border: 3px solid black;
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
 }
 
-.title-prin {
-    padding-left: 20px;
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
-.segundo {
-    background: #cccccc;
-    border: 3px solid black;
-    width: 100%;
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-.title-center {
-    text-align: center;
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
 }
 
-p {
-    text-align: center;
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
 }
 
-em strong {
-    color: red;
+.produtos li:hover {
+    border-color: #c78c19;
 }
 
-.bene {
-    background-color: grey;
-    border: 3px solid black;
-    width: 100%;
+.produtos li:active {
+    border-color: #088c19;
 }
 
-h3 {
-    background-color: rgb(29, 13, 13);
-    color: #ffffff;
-    margin-top: -1px;
-    margin-right: -1px;
-    margin-bottom: 0px;
-    margin-left: -1px;
-    padding: 2%;
+.produtos li:hover h2 {
+    font-size: 35px;
 }
 
-ul {
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
     display: inline-block;
+    text-align: center;
+    width: 30%;
     vertical-align: top;
-    list-style-position: inside;
-    text-align: left;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
-.itens {
-    font-style: italic;  
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
 }
 
-#beneficio {
+.pro-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url("imagens/bg.jpg");
+    padding: 40px 0;
+    border-top: 5px solid #1d0d0d;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+form input {
+    display: block;
+    margin: 0 0 20px;
+    padding: 5px 30px;
     width: 50%;
-    padding: 10px;
 }
