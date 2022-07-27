@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 header {
+    width: 100%;
     background-color: #bbbbbb;
     padding: 20px 0;
     border-bottom: 5px solid #1d0d0d;
@@ -8,14 +9,14 @@ header {
 
 .caixa {
     position: relative;
-    width: 940px;
+    max-width: 890px;
     margin: 0 auto;
 }
 
 nav {
     position: absolute;
     top: 110px;
-    right: 0;
+    right: 0px;
 }
 
 nav li {
@@ -27,7 +28,7 @@ nav a {
     text-transform: uppercase;
     color: black;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 21px;
     text-decoration: none;
 }
 
@@ -95,12 +96,13 @@ footer {
 }
 
 main {
-    width: 940px;
+    max-width: 950px;
     margin: 0 auto;
 }
 
 form {
     margin: 40px 0;
+    padding: 0px 30px;
 }
 
 form label, form legend {
