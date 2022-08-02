@@ -13,19 +13,19 @@ header {
 
 .caixa {
     position: relative;
-    min-width: 480px;
-    margin-right: 25%;
+    max-width: 1200px;
 }
 
 nav {
     position: absolute;
-    top: 115px;
+    top: 110px;
     right: 0px;
+    margin-right: 1%;
 }
 
 nav li {
     display: inline;
-    margin: 0 0 0 15px;
+    margin-left: 10px;
 }
 
 nav a {
@@ -99,10 +99,6 @@ footer {
     margin: 20px 0;
 }
 
-main {
-
-}
-
 form {
     margin: 40px 0;
     padding: 0px 30px;
@@ -168,6 +164,7 @@ td, th {
 
 .banner {
     width: 100%;
+    border-bottom: 5px solid #1d0d0d;
 }
 
 .title-aling {
@@ -181,14 +178,16 @@ td, th {
     background-color: #1d0d0d;
     color: #fefefe;
     padding: 5px;
+    border-top-left-radius: 10px;
 }
 
 .bkcor3 {
     background-color: #1d0d0d;
     color: #fefefe;
     width: 50%;
-    margin: 30px auto;
     padding: 5px;
+    margin: 30px auto;
+    border: 1px solid #fefefe;
 }
 
 .segundo {
@@ -222,7 +221,7 @@ td, th {
 }
 
 .map-content {
-    max-width: 950px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -237,18 +236,19 @@ td, th {
 }
 
 .content-bene {
-    width: 640px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .lista {
-    width: 40%;
+    width: 35%;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: top;;
 }
 
 .itens {
     line-height: 1.5;
+    padding-left: 30px;
 }
 
 .itens:first-child {
@@ -260,10 +260,31 @@ td, th {
 }
 
 .beneficio {
-    width: 60%;
+    width: 48%;
+    margin-left: 10px;
+    transition: 400ms;
+    box-shadow: 4px 4px 8px black;
+}
+
+.beneficio:hover {
+    opacity: 70%;
 }
 
 .video {
-    width: 560px;
+    max-width: 560px;
     margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .segundo, .content-bene, .mapa, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;  
+    }
 }
