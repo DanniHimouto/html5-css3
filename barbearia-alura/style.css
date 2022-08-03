@@ -32,7 +32,7 @@ nav a {
     text-transform: uppercase;
     color: black;
     font-weight: bold;
-    font-size: 21px;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -50,13 +50,21 @@ nav a:hover {
 }
 
 .produtos li:hover h2 {
-    font-size: 35px;
+    font-size: min(25px, 2vw);
 }
 
 .produtos {
-    width: 940px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 50px 0; 
+}
+
+.bora {
+    width: 100%;
+}
+
+.pro-dinamico {
+    width: auto;
 }
 
 .produtos li {
@@ -64,24 +72,25 @@ nav a:hover {
     text-align: center;
     width: 30%;
     vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
+    margin: 0 1%;
+    padding: 10px 10px;
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 10px;
 }
 
 .produtos h2 {
-    font-size: 30px;
+    font-size: min(30px, 3.5vw);
     font-weight: bold;
+    
 }
 
 .pro-descricao {
-    font-size: 18px;
+    font-size: max(100%, 1.3vw);
 }
 
 .produto-preco {
-    font-size: 22px;
+    font-size: min(25px, 3.5vw);
     font-weight: bold;
     margin-top: 10px;
 }
@@ -281,7 +290,7 @@ td, th {
 }
 
 @media screen and (max-width: 480px) {
-    .caixa, .segundo, .content-bene, .mapa, .video {
+    .caixa, .segundo, .content-bene, .mapa, .video, .input-padrao {
         width: auto;
     }
 
@@ -291,9 +300,10 @@ td, th {
 
     nav {
         position: static;  
+        text-align: center;
     }
 
-    .lista {
+    .lista, .enviar {
         width: 100%;
     }
 
